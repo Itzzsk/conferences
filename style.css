@@ -64,6 +64,7 @@ nav ul li a:hover {
   font-size: 28px;
   cursor: pointer;
   z-index: 1001;
+  right: 10px;
 }
 
 /* Banner */
@@ -100,6 +101,7 @@ main {
 }
 
 .card {
+  text-align: center;
   background: #fff;
   padding: 30px;
   margin-bottom: 30px;
@@ -152,6 +154,29 @@ button:hover {
 .fee-table th {
   background-color: #f8f9fa;
 }
+.committee-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.committee-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust spacing if needed */
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.committee-card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 100px;
+  width: 80%;
+}
 
 /* Contact Section */
 #contact {
@@ -184,11 +209,11 @@ button:hover {
 
 /* Footer */
 .footer {
-  text-align: center;
   padding: 20px;
   background-color: #f1f1f1;
-  font-size: 0.95rem;
+  font-size: rem;
   color: #555;
+  text-align: center;
   margin-top: 40px;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
 }
@@ -213,7 +238,7 @@ button:hover {
 
   .banner-wrapper {
     border-radius: 12px;
-    width: 95%;
+    width: 90%;
   }
 
   .card {
@@ -268,6 +293,67 @@ button:hover {
 
   .footer {
     font-size: 0.85rem;
+    text-align: center;
   }
 }
 
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .banner-wrapper {
+    width: 90%;
+    border-radius: 8px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  nav {
+    width: 200px;
+    padding-top: 60px;
+  }
+
+  nav ul {
+    gap: 16px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  #contact h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+  }
+
+  .committee-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  .committee-wrapper {
+    gap: 10px;
+  }
+}
